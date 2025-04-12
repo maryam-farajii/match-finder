@@ -1,0 +1,13 @@
+global using api.Models;
+global using api.Settings;
+global using Microsoft.AspNetCore.Mvc;
+global using MongoDB.Bson;
+global using MongoDB.Driver;
+global using MongoDB.Bson.Serialization.Attributes;
+global using System.ComponentModel.DataAnnotations;
+global using Microsoft.Extensions.Options;
+global using System.Collections.Generic;
+global using System;
+global using api.Repositories;
+global using api.DTOs;
+global using api.Interfaces;

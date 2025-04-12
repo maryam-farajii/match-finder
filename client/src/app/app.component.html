@@ -1,0 +1,115 @@
+<div class="register">
+
+    <form [formGroup]="registerFg">
+        <label>Email</label>
+        <input type="email">
+        <br>
+        <label>Name</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <label>ConfirmPassword</label>
+        <input type="password">
+        <br>
+        <label>Age</label>
+        <input type="number">
+        <br>
+        <label>Gender</label>
+        <input type="text">
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section> -->
+
+
+
+
+    
+    <!-- <div>
+        <p>
+            {{receivedUser?.email}}
+            <br>
+            {{receivedUser?.userName}}
+            <br>
+            {{receivedUser?.age}}
+            <br>
+            {{receivedUser?.isAlive}}
+        </p>
+
+        <p>{{errorMessage}}</p>
+    </div>
+    <div>
+        <button (click)="getAll()">Get All User</button>
+
+        @for (user of receivedUsers; track $index) {
+        <h2>
+            {{user.email}}
+            <br>
+            {{user.userName}}
+            <br>
+            {{user.age}}
+            <br>
+            {{user.isAlive}}
+        </h2>
+        }
+    </div>
+
+    <Button (click)="getByUserName()">Get User</Button>
+    <h1>
+        {{receivedUser?.email}}
+        <br>
+        {{receivedUser?.userName}}
+        <br>
+        {{receivedUser?.age}}
+        <br>
+        {{receivedUser?.isAlive}}
+    </h1>
+
+    <p>{{errorMessage}}</p>
+</section>
+<section>
+    <div class="update">
+        <!-- <form [formGroup]="registerFg">
+            <label>Email</label>
+            <input [formControl]="EmailCtrl" type="email">
+            <br>
+            <label>UserName</label>
+            <input [formControl]="UserNameCtrl" type="text">
+            <br>
+            <label>Age</label>
+            <input [formControl]="AgeCtrl" type="number">
+            <br>
+            <label>Is Alive</label>
+            <input [formControl]="IsAliveCtrl" type="checkbox">
+
+            <button (click)="update()" type="submit">Update Info</button>
+        </form> -->
+    <!-- </div> -->
+<!-- </section> -->
+<!-- 
+<button (click)="delete()">Delete User</button>
+<h2>{{errorMessage}}</h2> --> -->
