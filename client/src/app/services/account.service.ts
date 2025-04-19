@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { LoggedIn } from '../models/logged-in.model';
 import { HttpClient } from '@angular/common/http';
 import { Login } from '../models/login.model';
+import { Member } from '../models/member.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +12,15 @@ import { Login } from '../models/login.model';
 export class AccountService {
   http = inject(HttpClient);
 
-    register(appUser: AppUser): Observable<LoggedIn> {
-     return this.http.post<LoggedIn>('http://localhost:5000/api/user/register', appUser);
-    }
-  
-    login(userInput: Login): Observable<LoggedIn> {
-      return this.http.post<LoggedIn>('http://localhost:5000/api/user/login', userInput);
-    }
+  register(appUser: AppUser): Observable<LoggedIn> {
+    return this.http.post<LoggedIn>('http://localhost:5000/api/user/register', appUser);
+  }
+
+  login(userInput: Login): Observable<LoggedIn> {
+    return this.http.post<LoggedIn>('http://localhost:5000/api/user/login', userInput);
+  }
+
+  GetAllMember():Observable<Member[]>{
+    return this.http.get<Member[]>('http://localhost:5000/api/user');
+  }
 }
