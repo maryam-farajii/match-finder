@@ -4,13 +4,18 @@ import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule, Validators 
 import { AccountService } from '../../../services/account.service';
 import { RouterLink } from '@angular/router';
 import { MemberComponent } from '../../member/member.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [RouterLink,
     FormsModule, ReactiveFormsModule,
-    MemberComponent],
+    MemberComponent,
+    MatButtonModule, MatFormFieldModule, MatFormFieldModule   
+  ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })

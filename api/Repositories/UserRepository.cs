@@ -10,7 +10,7 @@ public class UserRepository : IUserRepository
         var dbName = client.GetDatabase(dbSettings.DatabaseName);
         _collection = dbName.GetCollection<AppUser>("users");
     }
-
+    
     public async Task<LoggedInDto?> RegisterAsync(AppUser userInput, CancellationToken cancellationToken)
     {
         AppUser user = await _collection.Find<AppUser>(doc =>

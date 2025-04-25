@@ -1,13 +1,15 @@
 import { Component, inject, OnInit } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
 import { Member } from '../../models/member.model';
 import { AccountService } from '../../services/account.service';
 import { RouterLink } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-member',
   standalone: true,
-  imports: [RouterLink,MatCardModule],
+  imports: [RouterLink, MatCardModule, MatIconModule],
   templateUrl: './member.component.html',
   styleUrl: './member.component.scss'
 })

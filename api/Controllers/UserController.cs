@@ -2,6 +2,8 @@ namespace api.Controllers
 {
     public class UserController(IUserRepository userRepository) : ControllerBase
     {
+
+
         [HttpPost("register")]
         public async Task<ActionResult<LoggedInDto>> Register(AppUser userInput, CancellationToken cancellationToken)
         {
